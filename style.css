@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.hero-background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.532);
+}
+
+.navbar {
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+}
+
+.header-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+nav {
+  gap: 15px;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+select {
+  background-color: rgba(0, 0, 0, 0.395);
+  border: 1px solid #ffffff57;
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 10px 25px 10px 13px;
+  appearance: none;
+}
+
+select:: {
+  background-color: #db0000;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: " ";
+  height: 5px;
+  width: 5px;
+  border-top: 1.5px solid aliceblue;
+  border-right: 1.5px solid aliceblue;
+  top: 14px;
+  right: 13px;
+  transform: rotate(133deg);
+  position: absolute;
+}
+
+.navbar button {
+  width: 100px;
+  border-radius: 5px;
+  padding: 10px 5px 10px 5px;
+  background-color: #db0000;
+  color: aliceblue;
+}
